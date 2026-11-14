@@ -1,0 +1,20 @@
+EOF
+
+  647  ls -R ~/os-class-activities/activity2
+  648  cd ~/os-class-activities/activity2/task1
+  649  gcc -o forkchild forkchild.c
+  650  ./forkchild > result_forkchild.txt 2>&1 &
+  651  sleep 2; ps -ef --forest | grep '[f]orkchild'
+  652  wait
+  653  cat result_forkchild.txt
+  654  history | tail -n 20 > command_used_forkchild.txt
+  655  cp "/mnt/c/Users/Admin/Pictures/Screenshorts of act1/"task1_*.png ~/os-class-activities/activity2/screenshots/
+  656  cd ~/os-class-activities/activity2/task3_shm
+  657  clear
+  658  gcc -o shm-producer shm-producer.c -lrt
+  659  gcc -o shm-consumer shm-consumer.c -lrt
+  660  ./shm-producer
+  661  ./shm-consumer > result-shm-ipc.txt
+  662  cat result-shm-ipc.txt
+  663  ./shm-consumer
+  664  history | tail -n 20 > command_used_shm.txt
