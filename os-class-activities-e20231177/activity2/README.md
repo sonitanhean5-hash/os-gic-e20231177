@@ -92,7 +92,7 @@ I compiled `winprocess.c` on Ubuntu with `x86_64-w64-mingw32-gcc` (MinGW-w64) an
 
 4. **In Task Manager, what was the PID of your parent program and the PID of the child? Do they match your program's output?**
 
-   > My program (`winprocess.exe`) had PID 46984 and the child `cmd.exe` had PID 47204, with Parent PID 46984. Yes, they match the PIDs printed by my program.
+   > My program (`winprocess.exe`) had PID AAAAA and the child `cmd.exe` had PID BBBBB, with Parent PID AAAAA. Yes, they match the PIDs printed by my program.
 
 5. **Compare the Processes tab (tree view) and the Details tab (PID/PPID columns). Which view makes it easier to understand the parent-child relationship? Why?**
 
