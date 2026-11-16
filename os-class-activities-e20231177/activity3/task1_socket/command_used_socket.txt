@@ -1,0 +1,20 @@
+ 1434  }
+ 1435  EOF
+ 1436  ls -R ~/os-class-activities/activity3
+ 1437  cd ~/os-class-activities/activity3/task1_socket
+ 1438  gcc -o server server.c
+ 1439  gcc -o client client.c
+ 1440  ./server
+ 1441  cd ~/os-class-activities/activity3/task1_socket
+ 1442  gcc -o server server.c
+ 1443  gcc -o client client.c
+ 1444  ./server
+ 1445  cd ~/os-class-activities/activity3/task1_socket
+ 1446  ./client
+ 1447  ./server > result_server.txt 2>&1 &
+ 1448  sleep 1
+ 1449  ./client > result_client.txt 2>&1
+ 1450  wait
+ 1451  cat result_server.txt result_client.txt > result_socket.txt
+ 1452  cat result_socket.txt
+ 1453  history | tail -n 20 > command_used_socket.txt

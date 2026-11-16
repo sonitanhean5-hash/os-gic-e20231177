@@ -1,0 +1,12 @@
+    PID     LWP NLWP PSR STAT COMMAND
+    940     940    5  12 Sl   threads_observe
+    940     942    5   6 Sl   threads_observe
+    940     943    5  10 Sl   threads_observe
+    940     944    5  14 Sl   threads_observe
+    940     946    5   3 Sl   threads_observe
+    PID    PPID PSR COMMAND
+      3       2   0 init-watcher
+      8       2   7 init
+    317       2  14 SessionLeader
+    320       2   4 login
+    544       2  15 SessionLeader
